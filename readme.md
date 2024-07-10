@@ -1,6 +1,6 @@
 ## CSS PROJECTS : 
 
-![CSS](./images/css.svg)
+ ![HTML](./images/html1.svg)  ![CSS](./images/css.svg) ![NETLIFY](./images/netlify.svg)
 
 ![IMG3](https://img.shields.io/badge/HTML%20AND%20CSS-PROJECTS-red)
 
