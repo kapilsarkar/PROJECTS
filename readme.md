@@ -1,6 +1,6 @@
 ## CSS PROJECTS : 
 
-`![CSS](https://readmebadge.vercel.app/badges/css.svg)`
+![CSS](./images/css.svg)
 
 ![IMG3](https://img.shields.io/badge/HTML%20AND%20CSS-PROJECTS-red)
 
