@@ -127,6 +127,17 @@
 
     ## NODE-JS(BACKEND) PROJECTS :
 
+    ![JS](./images/js1.svg)  ![node](./images/node.svg) ![exp](./images/express.svg) ![nodemon](./images/nodemon.svg) ![mongo](./images/mongo.svg) ![npm](./images/npm.svg) ![postman](./images/portfolio.svg) ![render](./images/render.svg)
+
+    1. HOTEL-APP 
+
+      - `FOLDER LINK` : [LINK](https://github.com/kapilsarkar/HOTELAPP)  
+  
+    1. VOTING-APP 
+
+      - `FOLDER LINK` : [LINK](https://github.com/kapilsarkar/VOTING-APP)  
+
+       
     
 
 
