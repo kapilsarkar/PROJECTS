@@ -127,7 +127,7 @@
 
     ## NODE-JS(BACKEND) PROJECTS :
 
-    ![JS](./images/js1.svg)  ![node](./images/node.svg) ![exp](./images/express.svg) ![nodemon](./images/nodemon.svg) ![mongo](./images/mongo.svg) ![npm](./images/npm.svg) ![postman](./images/portfolio.svg) ![render](./images/render.svg)
+    ![JS](./images/js1.svg)  ![node](./images/node.svg) ![exp](./images/express.svg) ![nodemon](./images/nodemon.svg) ![mongo](./images/mongo.svg) ![npm](./images/npm.svg) ![postman](./images/postman.svg) ![render](./images/render.svg)
 
     - HOTEL-APP :
 
