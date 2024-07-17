@@ -1,6 +1,18 @@
 ## CSS PROJECTS : 
 
-![HTML](./images/html1.svg)  ![CSS](./images/css.svg) ![NETLIFY](./images/netlify.svg)
+ABOUT :
+
+There are 3 projects in this section build in core CSS  and all Projects are responsive. 
+
+BUILD WITH :
+
+- ![HTML](./images/html1.svg) 
+- ![CSS](./images/css.svg) 
+
+DEPLOYED IN :
+
+- ![NETLIFY](./images/netlify.svg)
+---
 
 ![IMG3](https://img.shields.io/badge/HTML%20AND%20CSS-PROJECTS-red)
 
@@ -16,7 +28,20 @@
 
 ## TAILWIND CSS PROJECTS :
 
-![HTML](./images/html1.svg)  ![TAILWIND-CSS](./images/tailwindcss.svg) ![NETLIFY](./images/netlify.svg)
+ABOUT :
+
+There are 7 projects in these section build in Tailwind CSS.All Projects are Responsive.
+
+BUILD WITH : 
+
+- ![HTML](./images/html1.svg)  
+- ![TAILWIND-CSS](./images/tailwindcss.svg) 
+
+DEPLOYED IN :
+
+- ![NETLIFY](./images/netlify.svg)
+
+---
 
 ## <img height="30px" src="https://user-images.githubusercontent.com/110087385/210603643-e581d4a4-9ecc-41a3-bf6a-e05bc6123496.png"> Tailwind CSS Projects
 
@@ -43,12 +68,25 @@
 
 ## VANILLA JAVASCRIPT PROJECTS :
 
-![HTML](./images/html1.svg)  ![CSS](./images/css.svg) ![JS](./images/js1.svg) ![NETLIFY](./images/netlify.svg)
+ABOUT :
+
+There are 8 projects in this section build in  VANILLA JAVA SCRIPT. There are different complexity and API's used in different Projects. 
+
+BUILD IN : 
+
+- ![HTML](./images/html1.svg)
+- ![CSS](./images/css.svg)
+- ![JS](./images/js1.svg)
+
+DEPLOYED IN :
+
+- ![NETLIFY](./images/netlify.svg)
+---
 
 :computer::desktop_computer::iphone:
 
 1. WEATHER APP 
-     - `TOOLS` : HTML,CSS AND  VANILLA JAVSCRIPT
+     - `TOOLS` : HTML,CSS AND  VANILLA JAVASCRIPT
 
      - `API USED` : WEATHERAPI.COM
 
@@ -129,7 +167,25 @@
 
     ## NODE-JS(BACKEND) PROJECTS :
 
-    ![JS](./images/js1.svg)  ![node](./images/node.svg) ![exp](./images/express.svg) ![nodemon](./images/nodemon.svg) ![mongo](./images/mongo.svg) ![npm](./images/npm.svg) ![postman](./images/postman.svg) ![render](./images/render.svg)
+    ABOUT :
+
+    There are 2 Projects in this section.These are BACKEND PROJECTS(NODE-JS). 
+
+    BUILD IN :
+
+    - ![JS](./images/js1.svg)
+    - ![node](./images/node.svg)
+    - ![exp](./images/express.svg)
+    - ![nodemon](./images/nodemon.svg)
+    - ![mongo](./images/mongo.svg)
+    - ![npm](./images/npm.svg)
+    - ![postman](./images/postman.svg)
+
+    DEPLOYED IN :
+
+    - ![render](./images/render.svg)
+    ---
+
 
     - HOTEL-APP :
 
