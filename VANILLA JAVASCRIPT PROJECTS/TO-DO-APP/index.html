@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T0-DO-APP</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
-</head>
-<body>
-    <h1 class="heading">TO DO-APP</h1>
+  </head>
+  <body>
+    <!-- <h1 class="heading">TO DO-APP</h1> -->
     <!-- Work Type Section -->
-     <section class="work-type">
-      <ul>
-        <li>Personal</li>
-        <li>Work</li>
-        <li>Health</li>
-        <li>Finance</li>
-        <li>Education</li>
-      </ul>
-     </section>
-</body>
+     <div class="name">
+       <h2>Enter Your Name:</h2>
+     </div>
+    <section class="work-type">
+      <h3 class="work-type-heading">CHOOSE YOUR TYPE :</h3>
+      <div class="personal">
+        <input type="radio" id="personal" name="personal" value="personal" />
+        <label for="personal">Personal</label>
+      </div>
+      <div class="work">
+        <input type="radio" id="work" name="work" value="work" />
+        <label for="work">Work</label>
+      </div>
+      <div class="health">
+        <input type="radio" id="health" name="health" value="health" />
+        <label for="health">Health</label>
+      </div>
+      <div class="finance">
+        <input type="radio" id="finance" name="finance" value="finance" />
+        <label for="finance">Finance</label>
+      </div>
+      <div class="education">
+        <input type="radio" id="education" name="education" value="education" />
+        <label for="education">Education</label>
+      </div>
+    </section>
+  </body>
 </html>
