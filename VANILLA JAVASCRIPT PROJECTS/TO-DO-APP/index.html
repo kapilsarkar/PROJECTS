@@ -3,19 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T0-DO-APP</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
+    <title>T0-DO-APP</title>
+   
   </head>
   <body>
     <!-- <h1 class="heading">TO DO-APP</h1> -->
     <!-- Work Type Section -->
+     <div class="topImg">
+      <img src="./images/work.gif" class="workImg1" alt="img">
+      <img src="./images/work3.gif" class="workImg2" alt="img"> 
+     </div>
      <div class="name">
-       <h2>Enter Your Name:</h2>
+      <img src="./images/nameImg2.gif" class="nameImg" alt="name">
+       <h2 class="nameHead">Enter Your Name:</h2>
+      
+       <input type="text" class="nameBox">
+       <button class="nameBtn">CLICK</button>
+       <p class="nameTxt"></p>
+       <p class="dateTime"></p>
      </div>
     <section class="work-type">
+      <div class="close-icon">&times;</div> 
       <h3 class="work-type-heading">CHOOSE YOUR TYPE :</h3>
+      
       <div class="personal">
+       
         <input type="radio" id="personal" name="personal" value="personal" />
         <label for="personal">Personal</label>
       </div>

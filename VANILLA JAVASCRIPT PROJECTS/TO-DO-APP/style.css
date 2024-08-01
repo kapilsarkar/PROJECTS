@@ -7,10 +7,54 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+.topImg{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 120;
+    position: absolute;
+}
+.workImg1{
+    width: 23%;
+}
+.workImg2{
+    width: 23%;
+}
 .name{
     text-align: center;
+    background-image: linear-gradient(rgb(212 212 212), rgb(255 255 15), #74fff2);
     padding: 2rem;
-    background-image: url("./images/namimg.png");
+    position: absolute;
+    z-index: 150;
+}
+.nameImg{
+    width: 10%;
+}
+.nameHead{
+    color: #7511d3;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nameBtn{
+    padding: 0.5rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #6b00ce;
+    color: #fff;
+}
+.nameTxt{
+    padding: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 0, 43);
+    text-transform: uppercase;
+}
+.nameBox{
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: none;
 }
 .heading{
     width: 100%;
@@ -28,6 +72,31 @@ body{
     border-radius: 10px;
     padding: 2rem;
     background-image: url("./images/workbag.webp");
+
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+.dateTime{
+    font-weight: 900;
+    color: #5010e6;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.work-type.open{
+    /* display: block; */
+    transform: scale(1);
+  }
+
+  .close-icon{
+    font-size: 48px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #01131b;
+    display: flex;
+    justify-content: flex-end;
+    
 }
 .work-type-heading{
     text-align: center;
@@ -81,3 +150,4 @@ body{
     font-size: 1.2rem;
     cursor: pointer;
 }
+
