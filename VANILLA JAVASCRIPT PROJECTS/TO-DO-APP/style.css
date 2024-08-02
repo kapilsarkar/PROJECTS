@@ -11,16 +11,15 @@ body{
     text-align: center;
     /* background-image: linear-gradient(rgb(212 212 212), rgb(255 255 15), #74fff2); */
     padding: 2rem;
-    background: url("./images/workbg6.webp");
-   
+    background: url("./images/workbgc5.png");
 }
 .nameImg{
     width: 10%;
 }
 .nameHead{
-    color: #7511d3;
+    color: #009688;
     font-weight: 900;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: monospace;;
 }
 .nameBtn{
     padding: 0.5rem;
@@ -51,8 +50,15 @@ body{
     background-color: rgb(227 209 54);
     color: rgb(36 29 238);
 }
+.all-task{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 .work-type{
-    width: 50%;
+    width: 25%;
     background-color: #7511d3;
     color: #FFEB3B;
     font-weight: 900;
@@ -90,7 +96,7 @@ body{
     padding: 1.5rem;
     font-weight: 900;
     color: #3b1305;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .personal{
     background-color: #03A9F4;
@@ -98,7 +104,7 @@ body{
     padding: 1rem;
     margin-bottom: 7px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 .work{
@@ -107,7 +113,7 @@ body{
     padding: 1rem;
     margin-bottom: 7px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 .health{
@@ -116,7 +122,7 @@ body{
     padding: 1rem;
     margin-bottom: 7px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 .finance{
@@ -125,7 +131,7 @@ body{
     padding: 1rem;
     margin-bottom: 7px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 .education{
@@ -134,7 +140,16 @@ body{
     padding: 1rem;
     margin-bottom: 7px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
+}
+
+.addTask{
+    width: 25%;
+    background-color: #7511d3;
+    color: #FFEB3B;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 2rem;
 }
 
