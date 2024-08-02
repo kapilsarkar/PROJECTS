@@ -23,39 +23,30 @@
      </div>
      <section class="all-task">
       <section class="work-type">
-        <div class="close-icon">&times;</div> 
-        <h3 class="work-type-heading">CHOOSE YOUR TYPE :</h3>
-        
-        <div class="personal">
-         
-          <input type="radio" id="personal" name="personal" value="personal" />
-          <label for="personal">Personal</label>
-        </div>
-        <div class="work">
-          <input type="radio" id="work" name="work" value="work" />
-          <label for="work">Work</label>
-        </div>
-        <div class="health">
-          <input type="radio" id="health" name="health" value="health" />
-          <label for="health">Health</label>
-        </div>
-        <div class="finance">
-          <input type="radio" id="finance" name="finance" value="finance" />
-          <label for="finance">Finance</label>
-        </div>
-        <div class="education">
-          <input type="radio" id="education" name="education" value="education" />
-          <label for="education">Education</label>
-        </div>
+        <span class="close-icon">&times;</span>
+        <div class="taskAddSection">
+          <h3 class="taskAddHead">Add Your Task <img src="./images/addtaskImg.gif" class="taskAddImg" alt=""> </h3>
+         <div class="taskAdd">
+          <input type="text" class="taskAddInput"> 
+          <h3 class="taskAddCategory">Pick a Category</h3>
+          <div class="categoryList">
+            <label for="home">
+              <input type="radio" class="home">
+              <span>Home</span>
+            </label>
+            <label for="work">
+              <input type="radio" class="work">
+              <span>Work</span>
+            </label>
+            <label for="other">
+              <input type="radio" class="other">
+              <span>Other</span>
+            </label>
+          </div>
+          <button class="taskAddBtn">+ Add Task</button>
+         </div>
+        </div> 
       </section>
-      <section class="addTask">
-        sfsf
-       </section>
-       <section class="addTask">
-        sfsf
-       </section>
      </section>
-  
-   
   </body>
 </html>

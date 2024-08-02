@@ -38,9 +38,14 @@ body{
     text-transform: uppercase;
 }
 .nameBox{
-    padding: 0.5rem;
-    border-radius: 3px;
+    margin-block: 16px 30px;
+    padding: 10px;
+    outline: none;
     border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #4f4f4f;
 }
 .heading{
     width: 100%;
@@ -53,19 +58,17 @@ body{
 .all-task{
     width: 100%;
     display: flex;
-    justify-content: center;
+    padding-left: 1.2rem;
     gap: 1rem;
     flex-wrap: wrap;
 }
 .work-type{
-    width: 25%;
-    background-color: #7511d3;
-    color: #FFEB3B;
+    width: 100%;
+    background-color: #ffeb3b;
+    color: #9C27B0;
     font-weight: 900;
     border-radius: 10px;
     padding: 2rem;
-    background-image: url("./images/workbag.webp");
-
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
@@ -91,65 +94,58 @@ body{
     justify-content: flex-end;
     
 }
+.taskAddSection{
+    width: 43%;
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: #ffffffa6;
+}
 .work-type-heading{
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     font-weight: 900;
     color: #3b1305;
     font-size: 1rem;
 }
-.personal{
-    background-color: #03A9F4;
-    border-radius: 7px;
-    padding: 1rem;
-    margin-bottom: 7px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+
+.taskAddHead{
+    font-weight: 900;
+    font-size: 20px;
+    color: #490846;
 }
-.work{
-    background-color: #03A9F4;
-    border-radius: 7px;
-    padding: 1rem;
-    margin-bottom: 7px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+.taskAddImg{
+    width: 6%;
 }
-.health{
-    background-color: #03A9F4;
-    border-radius: 7px;
-    padding: 1rem;
-    margin-bottom: 7px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+.taskAddInput{
+    margin-block: 16px 30px;
+    padding: 16px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #4f4f4f;
 }
-.finance{
-    background-color: #03A9F4;
-    border-radius: 7px;
-    padding: 1rem;
-    margin-bottom: 7px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+.taskAddCategory{
+    font-weight: 900;
+    font-size: 20px;
+    color: #490846;
 }
-.education{
-    background-color: #03A9F4;
-    border-radius: 7px;
-    padding: 1rem;
-    margin-bottom: 7px;
+.categoryList{
+    display: flex;
+    gap: 15px;
+    padding-top: 5px;
+}
+.taskAddBtn{
+    background-color: #6b00ce;
     color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+    font-weight: 900;
+    padding-inline: 5rem;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-block: 1rem;
+    font-size: 12px;
 }
 
-.addTask{
-    width: 25%;
-    background-color: #7511d3;
-    color: #FFEB3B;
-    font-weight: 900;
-    border-radius: 10px;
-    padding: 2rem;
-}
 
