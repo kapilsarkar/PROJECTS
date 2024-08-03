@@ -18,7 +18,7 @@ function openWorkType() {
 
 nameBtn.addEventListener("click", (e) => {
   nameInput();
-  openWorkType();
+  openWorkType()
 });
 
 closeIcon.addEventListener("click", (e) => {

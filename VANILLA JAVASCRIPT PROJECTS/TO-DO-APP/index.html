@@ -6,47 +6,51 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
     <title>T0-DO-APP</title>
-   
   </head>
   <body>
     <!-- <h1 class="heading">TO DO-APP</h1> -->
     <!-- Work Type Section -->
-  
-     <div class="name">
-      <img src="./images/nameImg2.gif" class="nameImg" alt="name">
-       <h2 class="nameHead">Enter Your Name:</h2>
-      
-       <input type="text" class="nameBox">
-       <button class="nameBtn">CLICK</button>
-       <p class="nameTxt"></p>
-       <p class="dateTime"></p>
-     </div>
-     <section class="all-task">
+
+    <div class="name">
+      <img src="./images/nameImg2.gif" class="nameImg" alt="name" />
+      <h2 class="nameHead">Enter Your Name:</h2>
+
+      <input type="text" class="nameBox" placeholder="Enter Your Name" />
+      <button class="nameBtn">ADD</button>
+      <p class="nameTxt"></p>
+      <p class="dateTime"></p>
+    </div>
+    <section class="all-task">
       <section class="work-type">
-        <span class="close-icon">&times;</span>
         <div class="taskAddSection">
-          <h3 class="taskAddHead">Add Your Task <img src="./images/addtaskImg.gif" class="taskAddImg" alt=""> </h3>
-         <div class="taskAdd">
-          <input type="text" class="taskAddInput"> 
-          <h3 class="taskAddCategory">Pick a Category</h3>
-          <div class="categoryList">
-            <label for="home">
-              <input type="radio" class="home">
-              <span>Home</span>
-            </label>
-            <label for="work">
-              <input type="radio" class="work">
-              <span>Work</span>
-            </label>
-            <label for="other">
-              <input type="radio" class="other">
-              <span>Other</span>
-            </label>
+          <span class="close-icon">&times;</span>
+          <h3 class="taskAddHead">
+            Add Your Task
+            <img src="./images/addtaskImg.gif" class="taskAddImg" alt="" />
+          </h3>
+          <div class="taskAdd">
+            <input type="text" class="taskAddInput" placeholder="Add your task" />
+            <h3 class="taskAddCategory">Pick a Category</h3>
+            <div class="categoryList">
+              <label for="home">
+                <input type="radio" id="home" />
+                <span>Home</span>
+              </label>
+              <label for="work">
+                <input type="radio" id="work" />
+                <span>Work</span>
+              </label>
+              <label for="other">
+                <input type="radio" id="other" />
+                <span>Other</span>
+              </label>
+            </div>
+            <button class="taskAddBtn">+ Add Task</button>
+            <img src="./images/work2.gif" class="newImgTask" alt="img" />
           </div>
-          <button class="taskAddBtn">+ Add Task</button>
-         </div>
-        </div> 
+        </div>
+        <div class="taskShow"></div>
       </section>
-     </section>
+    </section>
   </body>
 </html>
