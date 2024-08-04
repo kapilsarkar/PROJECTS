@@ -25,4 +25,26 @@ closeIcon.addEventListener("click", (e) => {
   workType.classList.remove("open");
 });
 
+const category = document.getElementsByName("category")
+const taskAddInput = document.querySelector(".taskAddInput");
+const taskAddBtn = document.querySelector(".taskAddBtn");
+
+const myData = JSON.parse(localStorage.getItem("myData")) || []
+
+const addData = (myName,task,category) =>{
+  myData.push({myName,task,category})
+  localStorage.setItem("myData",JSON.stringify(myData))
+  return myName,task,category
+}
+
+taskAddBtn.addEventListener("click",(e)=>{
+     for(let i =0; i < category.length;i++){
+      if(category[i].checked)
+      addData(nameBox.value,taskAddInput.value,category[i].value)
+     }
+    
+  
+  
+})
+
 

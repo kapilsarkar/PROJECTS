@@ -29,21 +29,27 @@
             <img src="./images/addtaskImg.gif" class="taskAddImg" alt="" />
           </h3>
           <div class="taskAdd">
-            <input type="text" class="taskAddInput" placeholder="Add your task" />
+            <input
+              type="text"
+              class="taskAddInput"
+              placeholder="Add your task"
+            />
             <h3 class="taskAddCategory">Pick a Category</h3>
             <div class="categoryList">
-              <label for="home">
-                <input type="radio" id="home" />
-                <span>Home</span>
-              </label>
-              <label for="work">
-                <input type="radio" id="work" />
-                <span>Work</span>
-              </label>
-              <label for="other">
-                <input type="radio" id="other" />
-                <span>Other</span>
-              </label>
+              <form id="form">
+                <label for="home">
+                  <input type="radio" name="category" value="home"  id="home" />
+                  <span>Home</span>
+                </label>
+                <label for="work">
+                  <input type="radio" name="category" value="work"  id="work" />
+                  <span>Work</span>
+                </label>
+                <label for="other">
+                  <input type="radio"  name="category" value="other" id="other" />
+                  <span>Other</span>
+                </label>
+              </form>
             </div>
             <button class="taskAddBtn">+ Add Task</button>
             <img src="./images/work2.gif" class="newImgTask" alt="img" />
