@@ -5,8 +5,8 @@ const closeIcon = document.querySelector(".close-icon");
 const workType = document.querySelector(".work-type");
 const dateTime = document.querySelector(".dateTime");
 
-let date = new Date().toJSON().slice(0,10)
-dateTime.innerHTML = date
+let date = new Date().toJSON().slice(0, 10);
+dateTime.innerHTML = date;
 
 function nameInput() {
   nameTxt.innerHTML = `Welcome:${nameBox.value} `;
@@ -17,34 +17,36 @@ function openWorkType() {
 }
 
 nameBtn.addEventListener("click", (e) => {
-  nameInput();
-  openWorkType()
+  if (nameBox.value != "") {
+    nameInput();
+    openWorkType();
+  }
 });
 
 closeIcon.addEventListener("click", (e) => {
   workType.classList.remove("open");
 });
 
-const category = document.getElementsByName("category")
+const category = document.getElementsByName("category");
 const taskAddInput = document.querySelector(".taskAddInput");
 const taskAddBtn = document.querySelector(".taskAddBtn");
 
-const myData = JSON.parse(localStorage.getItem("myData")) || []
+const myData = JSON.parse(localStorage.getItem("myData")) || [];
 
-const addData = (myName,task,category) =>{
-  myData.push({myName,task,category})
-  localStorage.setItem("myData",JSON.stringify(myData))
-  return myName,task,category
+const addData = (myName, task, category,date) => {
+  myData.push({ myName, task, category,date });
+  localStorage.setItem("myData", JSON.stringify(myData));
+  return myName, task, category , date;
+};
+
+taskAddBtn.addEventListener("click", (e) => {
+  for (let i = 0; i < category.length; i++) {
+    if (category[i].checked && nameBox.value != "") {
+      addData(nameBox.value, taskAddInput.value, category[i].value,date);
+    }
+  }
+});
+
+function findData(){
+   
 }
-
-taskAddBtn.addEventListener("click",(e)=>{
-     for(let i =0; i < category.length;i++){
-      if(category[i].checked)
-      addData(nameBox.value,taskAddInput.value,category[i].value)
-     }
-    
-  
-  
-})
-
-
