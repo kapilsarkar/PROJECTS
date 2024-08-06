@@ -33,20 +33,35 @@ const taskAddBtn = document.querySelector(".taskAddBtn");
 
 const myData = JSON.parse(localStorage.getItem("myData")) || [];
 
-const addData = (myName, task, category,date) => {
-  myData.push({ myName, task, category,date });
+const addData = (myName, task, category, date) => {
+  myData.push({ myName, task, category, date });
   localStorage.setItem("myData", JSON.stringify(myData));
-  return myName, task, category , date;
+  return myName, task, category, date;
 };
 
 taskAddBtn.addEventListener("click", (e) => {
   for (let i = 0; i < category.length; i++) {
     if (category[i].checked && nameBox.value != "") {
-      addData(nameBox.value, taskAddInput.value, category[i].value,date);
+      addData(nameBox.value, taskAddInput.value, category[i].value, date);
     }
   }
+  findData();
 });
 
-function findData(){
-   
+const taskShow = document.querySelector(".taskShow");
+
+function findData() {
+  myData.map((e) => {
+    console.log(e.myName);
+
+    const taskList = document.createElement("div");
+    taskList.className = "taskList";
+    const allTaskList = document.createElement("div");
+    allTaskList.className = "allTaskList";
+    allTaskList.appendChild(taskList);
+    taskList.appendChild(taskShow);
+    const showTask = document.createElement("p");
+    showTask.className = "showName";
+    showTask.innerText = e.task;
+  });
 }
