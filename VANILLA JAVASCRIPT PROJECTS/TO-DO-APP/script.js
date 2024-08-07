@@ -45,23 +45,49 @@ taskAddBtn.addEventListener("click", (e) => {
       addData(nameBox.value, taskAddInput.value, category[i].value, date);
     }
   }
+  //findData();
+});
+const showAllBtn = document.querySelector(".showAllBtn");
+
+showAllBtn.addEventListener("click", (e) => {
   findData();
 });
-
 const taskShow = document.querySelector(".taskShow");
 
 function findData() {
-  myData.map((e) => {
-    console.log(e.myName);
+  myData.filter((e) => {
+    if (e.myName === nameBox.value) {
+      console.log(e.myName);
 
-    const taskList = document.createElement("div");
-    taskList.className = "taskList";
-    const allTaskList = document.createElement("div");
-    allTaskList.className = "allTaskList";
-    allTaskList.appendChild(taskList);
-    taskList.appendChild(taskShow);
-    const showTask = document.createElement("p");
-    showTask.className = "showName";
-    showTask.innerText = e.task;
+      const taskList = document.createElement("div");
+      taskList.className = "taskList";
+      taskShow.appendChild(taskList);
+      const allTaskList = document.createElement("div");
+      allTaskList.className = "allTaskList";
+      taskList.appendChild(allTaskList);
+      const showTask = document.createElement("p");
+      showTask.className = "showTask";
+      allTaskList.appendChild(showTask);
+      showTask.innerHTML = e.task;
+      const showCategory = document.createElement("p");
+      showCategory.className = "showCategory";
+      showCategory.innerHTML = e.category;
+      allTaskList.appendChild(showCategory);
+      const showDate = document.createElement("p");
+      showDate.className = "showDate";
+      showDate.innerHTML = e.date;
+      allTaskList.appendChild(showDate);
+      const editDelDiv = document.createElement("div");
+      editDelDiv.className = "editDelDiv";
+      taskList.appendChild(editDelDiv);
+      const editTaskBtn = document.createElement("button");
+      editTaskBtn.innerText = "Edit";
+      editTaskBtn.className = "editTaskBtn";
+      editDelDiv.appendChild(editTaskBtn);
+      const deleteTaskBtn = document.createElement("button");
+      deleteTaskBtn.innerText = "Delete";
+      deleteTaskBtn.className = "deleteTaskBtn";
+      editDelDiv.appendChild(deleteTaskBtn);
+    }
   });
 }

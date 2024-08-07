@@ -153,6 +153,18 @@ body {
   font-size: 12px;
   cursor: pointer;
 }
+.showAllBtn{
+  background-color: #6b00ce;
+  color: #fff;
+  font-weight: 900;
+  padding-inline: 4rem;
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding-block: 1rem;
+  font-size: 12px;
+  cursor: pointer;
+}
 .taskShow {
   width: 46%;
   border-radius: 5px;
@@ -173,6 +185,7 @@ body {
   max-height: 100px;
   overflow: hidden;
   display: flex;
+  margin-bottom: 1rem;
 }
 .allTaskList {
   width: 70%;
@@ -184,6 +197,10 @@ body {
 .showDate {
   color: #0f7fed;
 }
+/* .editDelDiv{
+  display: flex;
+  gap: 3px;
+} */
 .editTaskBtn {
   border: none;
   padding: 5px 10px;
@@ -192,6 +209,7 @@ body {
   font-weight: 700;
   border-radius: 7px;
   cursor: pointer;
+  margin-inline: 3px;
 }
 .deleteTaskBtn {
   border: none;
