@@ -43,6 +43,7 @@ taskAddBtn.addEventListener("click", (e) => {
   for (let i = 0; i < category.length; i++) {
     if (category[i].checked && nameBox.value != "") {
       addData(nameBox.value, taskAddInput.value, category[i].value, date);
+      taskResult.innerHTML = "Task Added"
     }
   }
   //findData();
@@ -51,8 +52,10 @@ const showAllBtn = document.querySelector(".showAllBtn");
 
 showAllBtn.addEventListener("click", (e) => {
   findData();
+  taskResult.innerHTML = ""
 });
 const taskShow = document.querySelector(".taskShow");
+const taskResult = document.querySelector(".taskResult");
 
 function findData() {
   myData.filter((e) => {

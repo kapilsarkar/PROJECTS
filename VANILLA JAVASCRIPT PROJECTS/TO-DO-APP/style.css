@@ -197,6 +197,10 @@ body {
 .showDate {
   color: #0f7fed;
 }
+.taskResult{
+  color: rgb(3, 71, 15);
+  font-family: cursive;
+}
 /* .editDelDiv{
   display: flex;
   gap: 3px;
