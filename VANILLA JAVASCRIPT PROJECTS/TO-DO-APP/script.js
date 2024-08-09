@@ -56,11 +56,15 @@ showAllBtn.addEventListener("click", (e) => {
 });
 const taskShow = document.querySelector(".taskShow");
 const taskResult = document.querySelector(".taskResult");
-
+ //Edit Button
+ const editTaskBtn = document.createElement("button");
+  //Delete Button
+  const deleteTaskBtn = document.createElement("button");
 function findData() {
   myData.filter((e) => {
     if (e.myName === nameBox.value) {
       console.log(e.myName);
+    
 
       const taskList = document.createElement("div");
       taskList.className = "taskList";
@@ -83,14 +87,18 @@ function findData() {
       const editDelDiv = document.createElement("div");
       editDelDiv.className = "editDelDiv";
       taskList.appendChild(editDelDiv);
-      const editTaskBtn = document.createElement("button");
+     
       editTaskBtn.innerText = "Edit";
       editTaskBtn.className = "editTaskBtn";
       editDelDiv.appendChild(editTaskBtn);
-      const deleteTaskBtn = document.createElement("button");
+     
       deleteTaskBtn.innerText = "Delete";
       deleteTaskBtn.className = "deleteTaskBtn";
       editDelDiv.appendChild(deleteTaskBtn);
     }
   });
 }
+
+editTaskBtn.addEventListener("click",(e)=>{
+  console.log(e)
+})
