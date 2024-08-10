@@ -43,7 +43,7 @@ taskAddBtn.addEventListener("click", (e) => {
   for (let i = 0; i < category.length; i++) {
     if (category[i].checked && nameBox.value != "") {
       addData(nameBox.value, taskAddInput.value, category[i].value, date);
-      taskResult.innerHTML = "Task Added"
+      taskResult.innerHTML = "Task Added";
     }
   }
   //findData();
@@ -52,19 +52,16 @@ const showAllBtn = document.querySelector(".showAllBtn");
 
 showAllBtn.addEventListener("click", (e) => {
   findData();
-  taskResult.innerHTML = ""
+  taskResult.innerHTML = "";
 });
 const taskShow = document.querySelector(".taskShow");
 const taskResult = document.querySelector(".taskResult");
- //Edit Button
- const editTaskBtn = document.createElement("button");
-  //Delete Button
-  const deleteTaskBtn = document.createElement("button");
+
 function findData() {
   myData.filter((e) => {
+      
     if (e.myName === nameBox.value) {
       console.log(e.myName);
-    
 
       const taskList = document.createElement("div");
       taskList.className = "taskList";
@@ -87,18 +84,20 @@ function findData() {
       const editDelDiv = document.createElement("div");
       editDelDiv.className = "editDelDiv";
       taskList.appendChild(editDelDiv);
-     
+      //Edit Button
+      const editTaskBtn = document.createElement("button");
       editTaskBtn.innerText = "Edit";
       editTaskBtn.className = "editTaskBtn";
       editDelDiv.appendChild(editTaskBtn);
-     
+      //Delete Button
+      const deleteTaskBtn = document.createElement("button");
       deleteTaskBtn.innerText = "Delete";
       deleteTaskBtn.className = "deleteTaskBtn";
       editDelDiv.appendChild(deleteTaskBtn);
+
+      editTaskBtn.addEventListener("click", (e) => {
+        console.log(e);
+      });
     }
   });
 }
-
-editTaskBtn.addEventListener("click",(e)=>{
-  console.log(e)
-})
